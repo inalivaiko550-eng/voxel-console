@@ -39,6 +39,11 @@ float playerAngle = 0.0;
 void setup() {
   Serial.begin(115200);
   tft.init();
+  tft.fillScreen(TFT_RED);
+  delay(1000);
+  tft.fillScreen(TFT_GREEN);
+  delay(1000);
+  tft.fillScreen(TFT_BLUE);
   tft.setRotation(0); // Если картинка перевернута, поменяй на 1, 2 или 3
   tft.fillScreen(TFT_BLACK);
   
